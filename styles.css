@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    background: #bac7f3;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #bac7f3;
+    
+    
+}
+
+header {
+    padding: 10px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5%;
+    height: 100%;
+    width: 100%;
+}
+
+.logo {
+    max-width: 150px;
+    border-radius: 9.5%;
+    height: 60px;
+    width: 140px;
+}
+
+.encabezado {
+    color: #6006f0;
+    font-size: 1.4rem;
+    margin-left: 2px;
+    text-align: center;
+}
+
+.areaTexto, .mensaje {
+    border-radius: 24px;
+    color: #0c0b0c;
+    background: #f0a8ea;
+    border: none;
+    resize: none;
+    width: 150%;
+    max-width: 900px;
+    height: 200px;
+    padding: 20px;
+    margin-top: 20px;
+    text-transform: lowercase;
+}
+
+::placeholder {
+    color: #0f0f01;
+    padding-left: 1%;
+    padding-right: 1%;
+    font-size: 0.9rem;
+}
+ .areaTexto:focus, .mensaje:focus {
+    outline: none;
+ }
+
+ .mensaje {
+    background-image: url("./Images/Muñeco.png");
+    background-repeat: no-repeat;
+    background-color: #f8a11f;
+    background-position: center;
+    background-size: contain;
+}
+
+ .botones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10%;
+    gap: 20px;
+    width: 100%;
+    max-width: 1500px;
+    
+    
+    
+}
+
+button {
+    background: #D8DFE8;
+    border: 1px solid #71440a;
+    border-radius: 24px;
+    color: #680a71;
+    cursor:pointer;
+    height: 30px;
+    width: 200px;
+    margin: 5px;
+    transition: transform 0.9s ease;
+}
+
+button:hover {
+    transform: scale(1.07);
+}
+
+.btn-desencriptar:hover, .btn-copiar:hover{
+    background: #964458;
+    color:#ebebeb;
+}
+
+.btn-encriptar:hover {
+    background: #D8DFE8;
+    color: #964458;
+}
+
+.btn-encriptar {
+    background-color: #964458;
+    color: white;
+}
+
+.btn-copiar {
+    background-color: #abcdef;
+}
+
+.informacion {
+    color: #495057;
+    font-size: 0.7rem;
+    text-align: start;
+    margin-left: 20px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.pie {
+    color:rgb(240, 255, 240);
+    background-color: #710a68;
+    font-size: 0.7rem;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    margin-top: auto;
+}
+
+@media (max-width: 768px) {
+    .encabezado {
+        font-size: 1.2rem;
+        margin-left: 10px;
+    }
+
+    .areaTexto, .mensaje {
+        height: 200px;
+        padding: 15px;
+    
+    }
+
+    button {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .btn-copiar {
+
+        display: block; /* Asegura que el botón ocupe un bloque completo */
+        margin: 20px auto;
+        text-align: center;
+
+    }
+
+    .botones {
+        
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .informacion {
+        font-size: 0.8rem;
+        margin-left: 0;
+    }
+
+    .pie {
+        font-size: 0.7rem;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .encabezado {
+        font-size: 1rem;
+    }
+
+    .areaTexto, .mensaje {
+        height: 180px;
+        padding: 10px;
+    }
+
+    .informacion {
+        font-size: 0.7rem;
+    }
+}
