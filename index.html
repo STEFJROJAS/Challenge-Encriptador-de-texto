@@ -1,11 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-co">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CHALLENGE</title>
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="./styles.css"></link>
 </head>
 <body>
-    
+    <header>
+        <img class="logo" src="imagenes/Logo.png" alt="Logo de Alura">
+        <p class="encabezado">ENCRIPTADOR DE TEXTO - Challenge Alura 2024</p>
+    </header>
+    <main>
+        <section>
+            <textarea class="areaTexto" placeholder="Ingresa texto a encriptar. Sólo minúsculas y sin acentos"></textarea>
+            <p class="informacion">Solo minúsculas y sin acentos</p>
+            <div class="botones">
+                <button class="btn-encriptar" onclick="btnEncriptar()">Cifrar</button>
+                <button class="btn-desencriptar" onclick="btnDesencriptar()">Descifrar</button>
+            </div>
+        </section>
+        <section>
+            <textarea class="mensaje"></textarea>
+            <button class="btn-copiar" onclick="btnCopiar()">Copiar</button>
+        </section>
+        <footer class="pie">STEFANIE JANETH ROJAS GUEVARA <br>Creado: Agosto del 2024</footer>
+    </main>
+    <script src="app.js"></script>
 </body>
 </html>
